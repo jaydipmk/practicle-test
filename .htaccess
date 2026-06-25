@@ -1,0 +1,17 @@
+# incident-system/.htaccess
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Block direct access to config folder
+    RewriteRule ^config/         - [F,L]
+    RewriteRule ^middleware/     - [F,L]
+    RewriteRule ^vendor/         - [F,L]
+</IfModule>
+
+# Disable directory listing
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>

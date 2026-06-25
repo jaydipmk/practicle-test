@@ -1,0 +1,9 @@
+{
+    "name": "incident/reporting-system",
+    "description": "Secure Incident Reporting System",
+    "type": "project",
+    "require": {
+        "firebase/php-jwt": "^6.10",
+        "tecnickcom/tcpdf": "^6.7"
+    }
+}
